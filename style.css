@@ -1,0 +1,71 @@
+body{
+margin: 0;
+padding: 0;
+background-color: #00002E;
+color:#FEB300;
+font-family: verdana;
+}
+span{
+left: 51%;
+top: 51%;
+position: absolute;
+color: #E50165;
+filter: blur(.85px);
+font-weight: bold;
+font-family: sans-serif;
+letter-spacing: 2px;
+}
+#container{
+position: absolute;
+top: 28%;
+left: 32%;
+}
+ul{
+display: flex;
+list-style: none;
+}
+ul li{
+letter-spacing: 10px;
+font-size: 100px;
+font-weight:bold;
+filter: blur(1px);
+}
+ul:hover li{
+animation: myAnimation;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+}
+@keyframes myAnimation{
+0%{
+transform: rotate(0deg) translateY(0px);
+opacity: 1;
+filter: blur(1px);
+}
+100%{
+transform: rotate(90deg) translateY(-200px);
+opacity: 0;
+filter: blur(20px);
+}
+}
+ul li:nth-child(1)
+{
+	animation-delay: 0s;
+}
+ul li:nth-child(2)
+{
+	animation-delay: .4s;
+}
+ul li:nth-child(3)
+{
+	animation-delay: .8s;
+}
+ul li:nth-child(4)
+{
+	animation-delay: 1.2s;
+}
+ul li:nth-child(5)
+{
+	animation-delay: 1.6s;
+}
